@@ -20,6 +20,8 @@ class CreateGamesTable extends Migration
             $table->string('accuracy');
             $table->string('bef_feel')->nullable();
             $table->string('aft_feel')->nullable();
+			$table->string('positive_bias')->nullable();
+            $table->string('negative_bias')->nullable();
             $table->timestamps();
         });
         Schema::table('games', function(Blueprint $table) {
