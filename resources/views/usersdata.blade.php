@@ -58,7 +58,7 @@
                                 <td>{{$result->race}}</td>
                                 <td>{{$result->height}}</td>
                                 <td>{{$result->weight}}</td>
-                                <td>{{$result->illness}}</td>
+                                <td><?= $result->illness != null ? $result->illness : "None" ?></td>
                                 <td>{{$result->phqscore}}</td>
                                 <td>{{$result->level}}</td>
                                 <td>{{$result->created_at}}</td>
@@ -99,7 +99,7 @@
                               <td>{{$value->race}}</td>
                               <td>{{$value->height}}</td>
                               <td>{{$value->weight}}</td>
-                              <td>{{$value->illness}}</td>
+                              <td><?= $value->illness != null ? $value->illness : "None" ?></td>
                               <td>{{$value->responsetime}}</td>
                               <td>{{$value->accuracy}}</td>
                               <td>{{$value->bef_feel}} -> {{$value->aft_feel}}</td>
@@ -139,7 +139,7 @@
                             <td>{{$value->race}}</td>
                             <td>{{$value->height}}</td>
                             <td>{{$value->weight}}</td>
-                            <td>{{$value->illness}}</td>
+                            <td><?= $value->illness != null ? $value->illness : "None" ?></td>
                             <td>{{$value->responsetime}}</td>
                             <td>{{$value->accuracy}}</td>
                             <td>{{$value->bef_feel}} -> {{$value->aft_feel}}</td>
@@ -179,7 +179,7 @@
                           <td>{{$value->race}}</td>
                           <td>{{$value->height}}</td>
                           <td>{{$value->weight}}</td>
-                          <td>{{$value->illness}}</td>
+                          <td><?= $value->illness != null ? $value->illness : "None" ?></td>
                           <td>{{$value->responsetime}}</td>
                           <td>{{$value->accuracy}}</td>
                           <td>{{$value->bef_feel}} -> {{$value->aft_feel}}</td>
@@ -219,7 +219,7 @@
                             <td>{{$value->race}}</td>
                             <td>{{$value->height}}</td>
                             <td>{{$value->weight}}</td>
-                            <td>{{$value->illness}}</td>
+                            <td><?= $value->illness != null ? $value->illness : "None" ?></td>
                             <td>{{$value->responsetime}}</td>
                             <td>{{$value->accuracy}}</td>
                             <td>{{$value->bef_feel}} -> {{$value->aft_feel}}</td>
@@ -259,7 +259,7 @@
                           <td>{{$value->race}}</td>
                           <td>{{$value->height}}</td>
                           <td>{{$value->weight}}</td>
-                          <td>{{$value->illness}}</td>
+                          <td><?= $value->illness != null ? $value->illness : "None" ?></td>
                           <td>{{$value->responsetime}}</td>
                           <td>{{$value->accuracy}}</td>
                           <td>{{$value->bef_feel}} -> {{$value->aft_feel}}</td>
@@ -299,7 +299,7 @@
                         <td>{{$value->race}}</td>
                         <td>{{$value->height}}</td>
                         <td>{{$value->weight}}</td>
-                        <td>{{$value->illness}}</td>
+                        <td><?= $value->illness != null ? $value->illness : "None" ?></td>
                         <td>{{$value->responsetime}}</td>
                         <td>{{$value->accuracy}}</td>
                         <td>{{$value->bef_feel}} -> {{$value->aft_feel}}</td>
